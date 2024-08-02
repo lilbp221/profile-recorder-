@@ -18,13 +18,13 @@ const Header = () => {
            
             <div class="flex items-center justify-center gap-2 ">
               <Link 
-                to="" 
+                to="/" 
                 className=" flex items-center justify-center py-1 px-2 text-sm md:text-sm lg:text-base bg-gradient-to-r from-blue-400 to-blue-600 hover:from-blue-600 hover:to-blue-800 text-white rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 font-mono  h-10"
               >
                 Home
               </Link>
               <Link 
-                to="" 
+                to="#" 
                 className=" flex items-center justify-center py-1 px-2 text-sm md:text-sm lg:text-base bg-gradient-to-r from-blue-400 to-blue-600 hover:from-blue-600 hover:to-blue-800 text-white rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 font-mono  h-10"
               >
                Profile
