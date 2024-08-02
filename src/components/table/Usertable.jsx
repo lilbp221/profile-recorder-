@@ -15,7 +15,7 @@ const Usertable = ({records,editRecord, deleteRecord}) => {
         </tr>
       </thead>
       <tbody>
-        {records.map((record, index) => (
+        {records?.map((record, index) => (
           <tr key={index}>
             <td className="border px-4 py-2">{record.name}</td>
             <td className="border px-4 py-2">{record.email}</td>
