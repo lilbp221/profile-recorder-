@@ -34,9 +34,9 @@ const Usertable = ({ records, editRecord, deleteRecord }) => {
                       <img src={record.profilePic} alt="Profile" width="50" />
                     </td>
                     <td className="border px-4 py-2">
-                      <button onClick={() => editRecord(index)}  className="block py-2  m-2 px-3 bg-gradient-to-r from-yellow-400 to-yellow-600 hover:from-yellow-600 hover:to-yellow-800 text-white rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 w-full font-mono"
+                      <button onClick={() => editRecord(index)}  className="block py-2  m-2 px-3 bg-gradient-to-r from-yellow-400 to-yellow-600 hover:from-yellow-600 hover:to-yellow-800 text-white rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 w-full  "
                 aria-current="page">Edit</button>
-                      <button onClick={() => deleteRecord(index)}  className="block py-2 m-2 px-3 bg-gradient-to-r from-red-400 to-red-600 hover:from-red-600 hover:to-red-800 text-white rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 w-full font-mono"
+                      <button onClick={() => deleteRecord(index)}  className="block py-2 m-2 px-3 bg-gradient-to-r from-red-400 to-red-600 hover:from-red-600 hover:to-red-800 text-white rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 w-full  "
                 aria-current="page">Delete</button>
                     </td>
                   </tr>

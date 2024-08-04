@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 
 const Userform = ({ addRecord, editRecord, editIndex, recordToEdit }) => {
   const [countries, setCountries] = useState([]);
+  
   const [data, setData] = useState({
     name: '',
     email: '',
@@ -93,9 +94,9 @@ const Userform = ({ addRecord, editRecord, editIndex, recordToEdit }) => {
             <h1 className="font-bold uppercase text-4xl"> {editIndex !== null ? 'Edit' : 'ADD'}<br/>Details</h1>
           </div>
           <form onSubmit={handleSubmit}>
-            <div className="flex justify-start mb-4">
-              <h3 className="text-gray-900 font-light text-md">Personal Information</h3>
-            </div>
+          <span className="flex justify-items-start mb-4 text-gray-900 font-light text-md">Personal Information (Fields marked * are required)</span>
+         
+              
             <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
               <input
                 className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
@@ -122,7 +123,7 @@ const Userform = ({ addRecord, editRecord, editIndex, recordToEdit }) => {
                 placeholder="Phone Number*"
                 name="phone"
                 required
-                pattern="\d{7}"
+                pattern="\d{7,10}" 
                 onChange={handleChange}
                 value={data.phone}
               />
@@ -196,7 +197,7 @@ const Userform = ({ addRecord, editRecord, editIndex, recordToEdit }) => {
             </div>
             <div className="my-2 w-full lg:w-1/4">
               <button
-                className="block py-2 px-3 bg-gradient-to-r from-blue-400 to-blue-600 hover:from-blue-600 hover:to-blue-800 text-white rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 w-full font-mono"
+                className="block py-2 px-3 bg-gradient-to-r from-blue-400 to-blue-600 hover:from-blue-600 hover:to-blue-800 text-white rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 w-full  "
                 aria-current="page"
               >
                 {editIndex !== null ? 'Update & Save' : 'Save'}
@@ -210,3 +211,4 @@ const Userform = ({ addRecord, editRecord, editIndex, recordToEdit }) => {
 }
 
 export default Userform;
+
