@@ -24,7 +24,7 @@ const Userform = ({ addRecord, editRecord, editIndex, recordToEdit }) => {
       ...data,
       [name]: value,
     });
-    console.log(data);
+//     console.log(data);
   };
 
   const handleImageChange = (e) => {
@@ -70,7 +70,7 @@ const Userform = ({ addRecord, editRecord, editIndex, recordToEdit }) => {
         const response = await axios.get('https://restcountries.com/v3.1/all');
         const countryNames = response.data.map((country) => country.name.common);
         setCountries(countryNames);
-        console.log(countryNames);
+      //   console.log(countryNames);
       } catch (error) {
         console.error('Error fetching countries:', error);
       }
@@ -94,7 +94,7 @@ const Userform = ({ addRecord, editRecord, editIndex, recordToEdit }) => {
             <h1 className="font-bold uppercase text-4xl"> {editIndex !== null ? 'Edit' : 'ADD'}<br/>Details</h1>
           </div>
           <form onSubmit={handleSubmit}>
-          <span className="flex justify-items-start mb-4 text-gray-900 font-light text-md">Personal Information (Fields marked * are required)</span>
+          <div className="flex justify-items-start mb-4 text-gray-900  text-lg">Personal Information (Fields marked  <pre class="text-red-500" > * </pre> are required)</div>
          
               
             <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
@@ -135,7 +135,7 @@ const Userform = ({ addRecord, editRecord, editIndex, recordToEdit }) => {
                 value={data.date}
               />
               <div className="flex justify-start">
-                <h3 className="text-gray-900 font-light text-md">Address</h3>
+                <h3 className="text-gray-900 text-lg">Address</h3>
               </div>
               <br/>
               <input
@@ -182,7 +182,7 @@ const Userform = ({ addRecord, editRecord, editIndex, recordToEdit }) => {
                 ))}
               </select>
               <div className="flex justify-start">
-                <h3 className="text-gray-900 font-light text-md">Profile Picture</h3>
+                <h3 className="text-gray-900  text-lg">Profile Picture</h3>
               </div>
               <br/>
 

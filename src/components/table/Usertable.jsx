@@ -1,13 +1,13 @@
 import React from 'react';
 
 const Usertable = ({ records, editRecord, deleteRecord }) => {
-      console.log(records)
+      // console.log(records)
   return (
     <div className="flex justify-center w-full">
       <div className="container mx-auto px-4">
         <div className="w-full p-14 my-2 rounded-2xl shadow-2xl">
           <div className="flex mb-4">
-            <h1 className="font-bold uppercase text-4xl">User List</h1>
+            <h1 className="font-bold uppercase text-4xl">User <br/> Details</h1>
           </div>
           <div className="overflow-x-auto">
             <table className="min-w-full bg-white rounded-lg overflow-hidden shadow-lg">

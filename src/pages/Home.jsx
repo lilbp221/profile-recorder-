@@ -41,6 +41,7 @@ const Home = () => {
     currentPage * recordsPerPage
   );
   const totalPages = Math.ceil(records.length / recordsPerPage);
+
   //sets the records to localStorage
   useEffect(() => {
     localStorage.setItem("records", JSON.stringify(records));
