@@ -11,9 +11,9 @@ const Footer = () => {
                     <img 
                       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvT9uDJ9kV7C3zO6iOt95e24Dtt3QMSncmqLLsuv4KWpeC_Gx6C0AZZpyHQWps4h-Psq8&usqp=CAU" 
                       className="h-10 " 
-                      alt="Blogbook logo" 
+                      alt="Profilebook logo" 
                     />
-                    <span className="text-lg font-bold whitespace-nowrap font-mono">Blogbook</span>
+                    <span className="text-lg font-bold whitespace-nowrap font-mono">Profilebook</span>
                   </div>
                   <nav className="mt-4 md:mt-0">
                     <ul className="flex flex-col md:flex-row md:space-x-6 rtl:space-x-reverse text-sm font-medium">
@@ -35,7 +35,7 @@ const Footer = () => {
                   
                 </div>
                 <div className="mt-6 text-center text-sm font-mono">
-                  <p>© {new Date().getFullYear()} Blogbook. All rights reserved.</p>
+                  <p>© {new Date().getFullYear()} Profilebook. All rights reserved.</p>
                 </div>
               </div>
             </footer>

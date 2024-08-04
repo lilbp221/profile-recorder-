@@ -9,9 +9,8 @@ const Header = () => {
           <img 
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvT9uDJ9kV7C3zO6iOt95e24Dtt3QMSncmqLLsuv4KWpeC_Gx6C0AZZpyHQWps4h-Psq8&usqp=CAU" 
             className="h-8" 
-            alt="Blogbook logo" 
-          />
-          <span className="self-center text-lg font-semibold whitespace-nowrap dark:text-white font-mono">Blogbook</span>
+            alt="Profilebook logo" />
+          <span className="self-center text-lg font-semibold whitespace-nowrap dark:text-white font-mono">Profilebook</span>
         </Link>
         <div className="flex items-center space-x-2 rtl:space-x-reverse mt-4 md:mt-0">
          

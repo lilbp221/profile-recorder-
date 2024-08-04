@@ -27,11 +27,20 @@ const Userform = ({ addRecord, editRecord, editIndex, recordToEdit }) => {
   };
 
   const handleImageChange = (e) => {
-    setData({
-      ...data,
-      profilePic: e.target.files[0],
-    });
-  };
+      const file = e.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+  
+        reader.onloadend = () => {
+          setData({
+            ...data,
+            profilePic: reader.result, // Store base64 string
+          });
+        };
+  
+        reader.readAsDataURL(file); // Convert file to base64 string
+      }
+    };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -151,7 +160,6 @@ const Userform = ({ addRecord, editRecord, editIndex, recordToEdit }) => {
                 onChange={handleChange}
                 value={data.province}
               >
-                <option value="">Select Your Province</option>
                 <option value="Province 1">Province 1</option>
                 <option value="Province 2">Province 2</option>
                 <option value="Province 3">Province 3</option>

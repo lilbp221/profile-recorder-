@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Usertable = ({ records, editRecord, deleteRecord }) => {
+      console.log(records)
   return (
     <div className="flex justify-center w-full">
       <div className="container mx-auto px-4">
@@ -30,7 +31,7 @@ const Usertable = ({ records, editRecord, deleteRecord }) => {
                     <td className="border px-4 py-2">{record.date}</td>
                     <td className="border px-4 py-2">{`${record.city}, ${record.district}, Province ${record.province}, ${record.country}`}</td>
                     <td className="border px-4 py-2">
-                      <img src={URL.createObjectURL(record.profilePic)} alt="Profile" width="50" />
+                      <img src={record.profilePic} alt="Profile" width="50" />
                     </td>
                     <td className="border px-4 py-2">
                       <button onClick={() => editRecord(index)}  className="block py-2  m-2 px-3 bg-gradient-to-r from-yellow-400 to-yellow-600 hover:from-yellow-600 hover:to-yellow-800 text-white rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 w-full font-mono"
