@@ -86,8 +86,8 @@ const Userform = ({ addRecord, editRecord, editIndex, recordToEdit }) => {
   }, [recordToEdit]);
 
   return (
-    <div className="flex justify-center w-full h-full">
-      <div className="container w-full my-3 px-4 lg:px-20 max-w-full">
+    <div className="flex justify-center w-full h-full select-none">
+      <div className="container w-full my-3 px-4 lg:px-20 max-w-full ">
         <div className="w-full p-8 my-2 md:px-12 lg:w-full lg:pl-20 lg:pr-40 mx-auto rounded-2xl shadow-xl">
           <div className="flex mb-4">
               <br/>

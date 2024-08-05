@@ -3,7 +3,7 @@ import React from 'react';
 const Usertable = ({ records, editRecord, deleteRecord }) => {
       // console.log(records)
   return (
-    <div className="flex justify-center w-full">
+    <div className="flex justify-center w-full select-none">
       <div className="container mx-auto px-4">
         <div className="w-full p-14 my-2 rounded-2xl shadow-2xl">
           <div className="flex mb-4">

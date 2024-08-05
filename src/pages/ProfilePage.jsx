@@ -18,7 +18,7 @@ const ProfilePage = () => {
 
   return (
     <Layout>
-      <div className="flex justify-center w-full min-h-screen ">
+      <div className="flex justify-center w-full min-h-screen select-none">
         <div className="container w-full my-3 px-4 lg:px-20 max-w-full h-full">
           <div className="w-full p-8 my-2 md:px-12 lg:w-full lg:pl-20 lg:pr-40 mx-auto rounded-2xl shadow-xl h-full">
           <div className="flex mb-4">
