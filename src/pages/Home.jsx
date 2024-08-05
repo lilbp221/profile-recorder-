@@ -3,7 +3,7 @@ import Layout from "../components/layout/Layout";
 import Userform from "../components/form/Userform";
 import Usertable from "../components/table/Usertable";
 import Pagination from "../components/pagination/Pagination";
-import ProfilePage from "./ProfilePage";
+// import ProfilePage from "./ProfilePage";
 import { Link } from "react-router-dom";
 
 const Home = () => {

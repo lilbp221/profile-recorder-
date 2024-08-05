@@ -94,7 +94,8 @@ const Userform = ({ addRecord, editRecord, editIndex, recordToEdit }) => {
             <h1 className="font-bold uppercase text-4xl"> {editIndex !== null ? 'Edit' : 'ADD'}<br/>Details</h1>
           </div>
           <form onSubmit={handleSubmit}>
-          <div className="flex justify-items-start mb-4 text-gray-900  text-lg">Personal Information (Fields marked  <pre class="text-red-500" > * </pre> are required)</div>
+          <div className="flex justify-items-start mb-4 text-gray-900  text-lg">Personal Information</div>
+        <pre class="text-red-400" >(Fields marked * are required) </pre> 
          
               
             <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
