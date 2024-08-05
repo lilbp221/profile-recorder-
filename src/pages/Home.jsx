@@ -8,11 +8,11 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   const [records, setRecords] = useState([]); //this is a array to store records from form
-  console.log(records);
+  // console.log(records);
   const [editIndex, setEditIndex] = useState(null);
   const [recordToEdit, setRecordToEdit] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
-  const recordsPerPage = 5;
+  const recordsPerPage = 5; 
 
   //passed data from Userform.jsx
   const addRecord = (data) => {

@@ -72,7 +72,7 @@ const Userform = ({ addRecord, editRecord, editIndex, recordToEdit }) => {
         setCountries(countryNames);
       //   console.log(countryNames);
       } catch (error) {
-        console.error('Error fetching countries:', error);
+        console.error('Error fetching countries');
       }
     };
 
